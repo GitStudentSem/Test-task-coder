@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(./background.jpg);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background-size: cover;
 }
@@ -94,9 +95,9 @@ label:before {
 input[type="radio"]:checked + label:before {
   content: "\2022";
   color: #055397;
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
-  line-height: 18px;
+  line-height: 50%;
 }
 .active {
   opacity: 1;
