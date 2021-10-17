@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Vacancy -->
+    <div class="question-wrapper active" id="vacancy">
+      <p class="question">
+        Для начала давай определимся на какую вакансию ты претендуешь?
+      </p>
+      <div class="input-wrapper">
+        <input id="designer" name="vacancy" type="radio" />
+        <label for="designer">Веб-дизайнер</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="tester" name="vacancy" type="radio" />
+        <label for="tester">Тестировщик</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="frontend" name="vacancy" type="radio" />
+        <label for="frontend">Джуниор фронтенд разработчик</label>
+      </div>
+      <button id="vacancy-next" type="button">Дальше</button>
+    </div>
+
+    <div class="question-wrapper" id="exp" data-work="">
+      <p class="question">Есть ли у тебя опыт?</p>
+      <div class="input-wrapper">
+        <input id="exp-1" name="exp" type="radio" />
+        <label for="exp-1">Больше 5 лет работаю по этой специальности</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="exp-2" name="exp" type="radio" />
+        <label for="exp-2">Ну немножко поработать успел</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="exp-3" name="exp" type="radio" />
+        <label for="exp-3"
+          >Чтобы получить опыт нужна работа, а я тут ваши тесты прохожу</label
+        >
+      </div>
+      <button id="exp-next" type="button">Дальше</button>
+    </div>
+    <!-- ./Vacancy -->
+
+    <!-- Designer -->
+    <div class="question-wrapper" id="programm" data-work="designer">
+      <p class="question">В какой программе делаешь макеты?</p>
+      <div class="input-wrapper">
+        <input id="programm-1" name="programm" type="radio" />
+        <label for="programm-1">Figma</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="programm-2" name="programm" type="radio" />
+        <label for="programm-2">Photoshop</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="programm-3" name="programm" type="radio" />
+        <label for="programm-3">В такой, о которой вы не слышали</label>
+      </div>
+      <button id="programm-next" type="button">Дальше</button>
+    </div>
+
+    <div class="question-wrapper" id="font" data-work="designer">
+      <p class="question">Любишь играться со шрифтами?</p>
+      <div class="input-wrapper">
+        <input id="font-1" name="font" type="radio" />
+        <label for="font-1">Я живу этим</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="font-2" name="font" type="radio" />
+        <label for="font-2">Если очень попросите</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="font-3" name="font" type="radio" />
+        <label for="font-3">Я сам/сама создаю шрифты</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="font-4" name="font" type="radio" />
+        <label for="font-4">Нет, в игры не играю</label>
+      </div>
+      <button id="font-next" type="button">Дальше</button>
+    </div>
+
+    <div class="question-wrapper" id="white" data-work="designer">
+      <p class="question">А белый цвет сможешь белее сделать?</p>
+      <div class="input-wrapper">
+        <input id="white-1" name="white" type="radio" />
+        <label for="white-1"
+          >Я же говорил(а), что этого заказчика забанить надо</label
+        >
+      </div>
+      <div class="input-wrapper">
+        <input id="white-2" name="white" type="radio" />
+        <label for="white-2"
+          >Пусть заказчик приедет и на Ретине посмотрит ещё разок</label
+        >
+      </div>
+      <div class="input-wrapper">
+        <input id="white-3" name="white" type="radio" />
+        <label for="white-3">Конечно сделаю, если #fff недостаточно</label>
+      </div>
+      <button id="white-next" type="button">Дальше</button>
+    </div>
+
+    <div class="question-wrapper" id="which-way" data-work="designer">
+      <p class="question">
+        Последний вопрос: в какую стороны расти планируешь?
+      </p>
+      <div class="input-wrapper">
+        <input id="which-way-1" name="which-way" type="radio" />
+        <label for="which-way-1">До арт-дира, естественно</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="which-way-2" name="which-way" type="radio" />
+        <label for="which-way-2"
+          >В какую-то одну сферу хочу, но пока не знаю какую</label
+        >
+      </div>
+      <div class="input-wrapper">
+        <input id="which-way-3" name="which-way" type="radio" />
+        <label for="which-way-3">Пока расту в ширину</label>
+      </div>
+
+      <button id="which-way-next" type="button">Дальше</button>
+    </div>
+    <!-- ./Designer -->
+    <!-- Tester -->
+    <div class="question-wrapper" id="tester">
+      <p class="question">
+        Прости, но такой вакансии пока нет, может на кого-то другого хочешь
+        попробоваться?
+      </p>
+      <button>Возможно</button>
+    </div>
+    <!-- ./Tester -->
+    <!-- Frontend -->
+
+    <div class="question-wrapper" id="div" data-work="frontend">
+      <p class="question">Начнём с простого, div от span отличишь?</p>
+      <div class="input-wrapper">
+        <input id="div-1" name="div" type="radio" />
+        <label for="div-1"
+          >Естественно, первый для контейнеров, второй для текста</label
+        >
+      </div>
+      <div class="input-wrapper">
+        <input id="div-2" name="div" type="radio" />
+        <label for="div-2">Код пишут компьютеры, пусть они и отличают</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="div-3" name="div" type="radio" />
+        <label for="div-3">Думаю, что да</label>
+      </div>
+      <button id="div-next" type="button">Дальше</button>
+    </div>
+
+    <div class="question-wrapper" id="js" data-work="frontend">
+      <p class="question">Окей, а с JS у тебя как?</p>
+      <div class="input-wrapper">
+        <input id="js-1" name="js" type="radio" />
+        <label for="js-1">Я как-то больше по JQuery</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="js-2" name="js" type="radio" />
+        <label for="js-2">Норм, прошёл курс</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="js-3" name="js" type="radio" />
+        <label for="js-3">На чистом JS уже не первый год пишу</label>
+      </div>
+      <button id="js-next" type="button">Дальше</button>
+    </div>
+
+    <div class="question-wrapper" id="php" data-work="frontend">
+      <p class="question">Насколько ты любишь PHP?</p>
+      <p>
+        Введите число от 0 до 10, где 0 — это совершенно не люблю, а 10 — обожаю
+      </p>
+      <input
+        class="input"
+        id="php"
+        name="php"
+        type="number"
+        placeholder="Число от 0 до 10"
+      />
+      <button id="php-next" type="button">Дальше</button>
+    </div>
+
+    <div class="question-wrapper" id="days" data-work="frontend">
+      <p class="question">Сколько дней в неделю планируешь ходить в офис?</p>
+      <div class="input-wrapper">
+        <input id="days-1" name="days" type="radio" />
+        <label for="days-1">Я хочу работать удалённо</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="days-2" name="days" type="radio" />
+        <label for="days-2">3-4 дня в неделю будет норм</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="days-3" name="days" type="radio" />
+        <label for="days-3">Я перееду в ваш офис, крепитесь</label>
+      </div>
+      <button id="days-next" type="button">Дальше</button>
+    </div>
+    <!-- ./Frontend -->
+    <!-- Дополнительный вопрос -->
+    <div class="question-wrapper" id="grade" data-work="">
+      <p class="question">Кстати, а оценку задач ты как даёшь?</p>
+      <div class="input-wrapper">
+        <input id="grade-1" name="grade" type="radio" />
+        <label for="grade-1">По часам</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="grade-2" name="grade" type="radio" />
+        <label for="grade-2">По дням</label>
+      </div>
+      <div class="input-wrapper">
+        <input id="grade-3" name="grade" type="radio" />
+        <label for="grade-3">По наитию</label>
+      </div>
+      <button id="grade-next" type="button">Дальше</button>
+    </div>
+    <!-- ./ Дополнительный вопрос -->
+    <!-- Результат -->
+    <div class="question-wrapper" id="result">
+      <p class="result"></p>
+      <button id="again"></button>
+    </div>
+    <!-- ./Результат -->
+  </body>
+  <script src="index.js"></script>
+</html>
