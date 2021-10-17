@@ -47,8 +47,8 @@ const definingVacancies = () => {
     } else if (input.checked && input.id === "tester") {
       vacancy.classList.remove("active");
       resultBlock.classList.add("active");
-      result.innerHTML = "К сожалению, нам с тобой не по пути";
-      resultButton.innerHTML = "Возможно";
+      result.textContent = "К сожалению, нам с тобой не по пути";
+      resultButton.textContent = "Возможно";
       resultButton.addEventListener("click", tryAgain);
     }
   });
@@ -57,7 +57,7 @@ vacancyButton.addEventListener("click", definingVacancies);
 
 const showResult = () => {
   resultBlock.classList.add("active");
-  resultButton.innerHTML = "Начать сначала";
+  resultButton.textContent = "Начать сначала";
   Math.round(percent);
   if (percent < 0) {
     percent = 0;
@@ -65,11 +65,11 @@ const showResult = () => {
     percent = 100;
   }
   if (percent <= 50) {
-    result.innerHTML = "К сожалению, нам с тобой не по пути";
+    result.textContent = "К сожалению, нам с тобой не по пути";
   } else if (percent > 80) {
-    result.innerHTML = "Проверь почту, там уже лежит оффер";
+    result.textContent = "Проверь почту, там уже лежит оффер";
   } else {
-    result.innerHTML = "Ну если больше никто не придёт, то возьмём тебя";
+    result.textContent = "Ну если больше никто не придёт, то возьмём тебя";
   }
   resultButton.addEventListener("click", tryAgain);
 };
