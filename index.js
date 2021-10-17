@@ -9,22 +9,20 @@ const resultButton = document.getElementById("again"); // Кнопка нача�
 let percent = 0; // Шанс взятия на работу
 let count = 0; // Счетчик блоков
 
-//Очистка слушателей
-const clearListener = () => {
-  resultButton.removeEventListener("click", tryAgain);
-};
-
 const tryAgain = () => {
+  // Сброс всех счетчиков
   count = 0;
   percent = 0;
   // Сброс всех форм
   const inputs = document.querySelectorAll("input");
+  // Сброс значений в инпутах
   inputs.forEach((input) => {
-    if (input.checked) {
+    if (input.checked || input.value != "") {
       input.checked = false;
+      input.value = "";
     }
   });
-  clearListener();
+  resultButton.removeEventListener("click", tryAgain);
   exp.removeAttribute("data-work");
   grade.removeAttribute("data-work");
   resultBlock.classList.remove("active");
