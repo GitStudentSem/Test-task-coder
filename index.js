@@ -47,7 +47,8 @@ const definingVacancies = () => {
     } else if (input.checked && input.id === "tester") {
       vacancy.classList.remove("active");
       resultBlock.classList.add("active");
-      result.textContent = "К сожалению, нам с тобой не по пути";
+      result.textContent =
+        "Прости, но такой вакансии пока нет, может на кого-то другого хочешь попробоваться?";
       resultButton.textContent = "Возможно";
       resultButton.addEventListener("click", tryAgain);
     }
